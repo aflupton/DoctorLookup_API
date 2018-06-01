@@ -6,30 +6,48 @@
   </head>
   <body>
     <div class="container">
-      <h1>Doctor Lookup</h1>
-      <h3>Implementing data from BetterDoctor.com</h3>
-      <br>
+      <div class="jumbotron">
+        <h1 class="display-2">Doctor Lookup</h1>
+        <h3>Implementing data from BetterDoctor.com</h3>
+      </div>
+      <hr>
       <form id="inputForm" class="form-group">
         <label for="location">Enter a location:</label>
-        <input class="form-control" id="location" type="text">
-        <label for="issue">Enter a medical issue:</label>
-        <input class="form-control" id="issue" type="text">
-        <button type="submit" name="button">Submit</button>
+        <br>
+        <small>If entering a placename, use the following format: "'wa-seattle' or 'ca-san-francisco' or '37.773,-122.413,100'"</small>
+        <input class="w-50 form-control" id="location" type="text">
+        <br>
+        <label for="query">Enter a medical query:</label>
+        <input class="w-50 form-control" id="query" type="text">
+        <br>
+        <button class="btn btn-success" type="submit" name="button">Submit</button>
+        <button class="btn btn-success" id="refresh" type="button" name="button">Refresh</button>
       </form>
-      <div id="resultsTable" class="">
-        <table>
+      <div id="statusError"></div>
+      <div id="postError"></div>
+      <br>
+      <div id="resultsTable">
+        <h3 id="resultsHeader"></h3>
+        <table class="table">
           <thead>
             <tr>
-              <th>ID</th>
-              <th>Doctor name</th>
-              <th>Phone</th>
+              <th>Image</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Title</th>
+              <th>Practice Name</th>
+              <th>Speciality</th>
               <th>Address</th>
+              <th>Phone</th>
             </tr>
           </thead>
           <tbody id="results">
 
           </tbody>
         </table>
+      </div>
+      <div class="footer">
+        <p>© Andrew Lupton, 2018</p>
       </div>
     </div>
   </body>
