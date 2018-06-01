@@ -28,8 +28,7 @@ None to date.
 
 ## Support and contact details
 
-If you have any questions, email Andrew at `aflupton@gmail.com`
-
+If you have any questions, email Andrew at mailto:aflupton@gmail.com 
 ## Technologies Used
 
   * _ES6_
