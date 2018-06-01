@@ -2,6 +2,10 @@
 #### _Doctor Lookup App, 6/1/18_
 #### _By Andrew Lupton_
 
+## Description
+
+An app that assists in finding a doctor within a specified search area. The user enters their location and medical issue and the app returns a list of the relevant doctors.
+
 ## Setup
 1. Clone this repository (DoctorLookup_API) from Github.
 2. Go to https://developer.betterdoctor.com/ and generate a unique API Key.
@@ -20,11 +24,11 @@
 
 ## Known Bugs
 
-_None to date._
+None to date.
 
 ## Support and contact details
 
-If you have any questions, email Andrew at mailto:aflupton@gmail.com
+If you have any questions, email Andrew at `aflupton@gmail.com`
 
 ## Technologies Used
 

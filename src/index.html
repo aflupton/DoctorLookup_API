@@ -6,8 +6,31 @@
   </head>
   <body>
     <div class="container">
-      
+      <h1>Doctor Lookup</h1>
+      <h3>Implementing data from BetterDoctor.com</h3>
+      <br>
+      <form id="inputForm" class="form-group">
+        <label for="location">Enter a location:</label>
+        <input class="form-control" id="location" type="text">
+        <label for="issue">Enter a medical issue:</label>
+        <input class="form-control" id="issue" type="text">
+        <button type="submit" name="button">Submit</button>
+      </form>
+      <div id="resultsTable" class="">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Doctor name</th>
+              <th>Phone</th>
+              <th>Address</th>
+            </tr>
+          </thead>
+          <tbody id="results">
 
+          </tbody>
+        </table>
+      </div>
     </div>
   </body>
 </html>
