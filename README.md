@@ -4,7 +4,7 @@
 
 ## Description
 
-An app that assists in finding a doctor within a specified search area. The user enters their location and medical issue and the app returns a list of the relevant doctors.
+An app that assists in finding a doctor within a hard coded search area. The user enters a name and medical issue and the app returns a list of the specified doctors.
 
 ## Setup
 1. Clone this repository (DoctorLookup_API) from Github.
