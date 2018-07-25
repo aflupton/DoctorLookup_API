@@ -17,7 +17,6 @@ $(document).ready(function() {
 
     let request = new XMLHttpRequest();
     let url = `https://api.betterdoctor.com/2016-03-01/doctors?name=${name}&query=${query}&location=47.6062%2C-122.3321%2C100&sort=rating-desc&skip=0&limit=50&user_key=${process.env.API_KEY}`;
-    console.log(url);
 
 
     request.onreadystatechange = function() {
