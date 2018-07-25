@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Doctor Lookup</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="container">
@@ -15,48 +13,28 @@
       <hr>
       <form id="inputForm">
         <div class="form-group">
-          <label for="location">Search doctors by location:</label>
-          <small>If entering a placename, use the following format: 'wa-seattle' or 'ca-san-francisco' or '37.773,-122.413,100'</small>
-          <input class="w-50 form-control" id="location" type="text">
-          <button class="btn btn-info" type="submit" name="button">Submit</button>
-        </div>
-        <div class="form-group">
           <label for="name">Search doctors by name:</label>
           <small>Search by a name keyword: (e.g. 'Lupton')</small>
           <input class="w-50 form-control" id="name" type="text">
-          <button class="btn btn-info" type="submit" name="button">Submit</button>
         </div>
         <div class="form-group">
           <label for="query">Search doctors by medical query:</label>
           <small>Search by a keyword query: (e.g. 'Toothache')</small>
-          <input id="query" class="w-50 form-control" type="text">
-          <button class="btn btn-info" type="submit" name="button">Submit</button>
+          <input class="w-50 form-control" id="query" type="text">
+          <br>
         </div>
+        <button class="btn btn-info" type="submit" name="button">Submit</button>
       </form>
       <div id="statusError"></div>
       <div id="postError"></div>
       <br>
-      <div id="resultsTable">
+      <div id="results" class="form-control">
         <h3 id="resultsHeader"></h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Image</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Title</th>
-              <th>Practice</th>
-              <th>Speciality</th>
-              <th>Address</th>
-              <th>Website</th>
-              <th>Accepting New Patients</th>
-            </tr>
-          </thead>
-          <tbody id="results">
+        <span id="resultsList">
 
-          </tbody>
-        </table>
+        </span>
       </div>
+      <hr>
       <div class="footer">
         <p>© Andrew Lupton, 2018</p>
       </div>
